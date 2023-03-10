@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { InventoryComponent } from './inventory/inventory.component';
 
 const routes: Routes = [
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'inventory', component: InventoryComponent},
   {path: 'crafting', component: CraftingComponent}
