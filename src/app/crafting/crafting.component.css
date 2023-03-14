@@ -1,0 +1,146 @@
+.container{
+    width: 100%;
+    height: 90vh;
+}
+
+.top{
+    width: 100%;
+    height: 10vh;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    float: left;
+    margin-left: 1%;
+}
+
+select{
+    background-color: #673ab7;
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+    outline: none;
+    float: right;
+    border: none;
+}
+
+.left-container{
+    width: 30%;
+    height: 65%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.middle-container{
+    width: 40%;
+    height: 65%;
+    float: left;
+    margin-bottom: 3%;
+    /* From https://css.glass */
+    background: rgba(103, 58, 183, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    border: 1.5px solid rgba(103, 58, 183, 1);
+    background-image: url('../images/potion2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.right-container{
+    width: 30%;
+    height: 65%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.ingridient-block{
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    /* From https://css.glass */
+    background: rgba(103, 58, 183, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    border: 1.5px solid rgba(103, 58, 183, 1);
+}
+
+.brain{
+    background-image: url('../images/heart.png');
+    background-position: center;
+    background-size: cover;
+}
+
+p{
+    padding: 5%;
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.nan{
+    background-image: url('../images/block.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.eye{
+    background-image: url('../images/eyeball.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.mosquito{
+    background-image: url('../images/mosquito.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.octopus{
+    background-image: url('../images/octopus.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.gold{
+    background-image: url('../images/gold.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.dragonTail{
+    background-image: url('../images/dragontail.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.raven{
+    background-image: url('../images/raven.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.shrimp{
+    background-image: url('../images/shrimp.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.bottom-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

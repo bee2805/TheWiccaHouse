@@ -8,11 +8,12 @@
     transition: all .5s ease;
     padding: 3rem;
     /* background-color: rgb(247, 244, 244); */
-    background-image: url('../images/background.jpg');
-    background-color: rgba(255, 255, 255, 0.932);
+    background-image: url('../images/background.png');
     background-position: center;
     background-size: cover;
+    overflow: auto;
 }
+
 
 .body-trimmed{
     width: calc(100% - 15%);

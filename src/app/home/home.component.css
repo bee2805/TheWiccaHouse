@@ -1,0 +1,82 @@
+.bg-img{
+    width: 105.7%;
+    margin-left: -3%;
+    height: 101vh;
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    margin-top: -3%;
+    padding: 5%;
+    padding-top: 5%;
+    padding-right: 13%;
+    position:fixed;
+}
+
+.intro-text{
+    width: 35%;
+    /* background-color: aqua; */
+    height: auto;
+    margin-top: 15%;
+}
+
+.item{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+
+.more-info{
+    margin-top: 10%;
+    padding: 1%;
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* From https://css.glass */
+    background: rgba(103, 58, 183, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    /* border: 1.5px solid rgba(103, 58, 183, 1); */
+    float: right;
+}
+
+.fa-book, .fa-flask{
+    font-size: 40px;
+    margin-bottom: 1%;
+}
+
+.btn{
+    margin-left: 4%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    font-weight: 100;
+    margin-left: 4%;
+    margin-top: 7%;
+    color: white;
+}
+
+p{
+    margin-top: 25px;
+}
