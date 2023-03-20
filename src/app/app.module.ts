@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormControl } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // angular material
 import {MatButtonModule} from '@angular/material/button';
@@ -19,8 +19,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +31,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule, // for http functionality
     BrowserAnimationsModule,
     MatButtonModule,
     MatTabsModule,
