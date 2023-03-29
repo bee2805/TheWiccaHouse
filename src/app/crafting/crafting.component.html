@@ -1,32 +1,49 @@
-<div class="container">
+<div class="container" >
+
+    <!-- TODO: User verification modal -->
+    <!-- <button (click)="openModal()">Open Modal</button> -->
+
+
     <div class="top">
-        <h1>Craft your potion</h1>
+        <h1>Craft your potion {{username | uppercase }}!</h1>
         <select>
             <option>Select your potion</option>
         </select>
     </div>
 
-    <div class="left-container">
-        <div class="ingridient-block nan" matTooltip="Please select an ingridient"></div>
-        <div class="ingridient-block nan"  matTooltip="Please select an ingridient"></div>
-        <div class="ingridient-block nan" matTooltip="Please select an ingridient"></div>
+    <div class="middle">
+        <div class="left-container">
+            <div class="ingridient-block nan" matTooltip="hint: "></div>
+            <div class="ingridient-block nan"  matTooltip="hint: "></div>
+            <div class="ingridient-block nan" matTooltip="hint: "></div>
+        </div>
+    
+        <div class="middle-container">
+            <div class="potion-block"></div>
+        </div>
+    
+        <div class="right-container">
+            <div class="ingridient-block nan" matTooltip="hint: "></div>
+            <div class="ingridient-block nan" matTooltip="hint: "></div>
+            <div class="ingridient-block nan" matTooltip="hint: "></div>
+        </div>
     </div>
 
-    <div class="middle-container"></div>
-
-    <div class="right-container">
-        <div class="ingridient-block nan" matTooltip="Please select an ingridient"></div>
-        <div class="ingridient-block nan" matTooltip="Please select an ingridient"></div>
-        <div class="ingridient-block nan" matTooltip="Please select an ingridient"></div>
+    <div class="bottom">
+        <h1 class="craft-btn">Craft Potion</h1>
     </div>
+
+    <!-- <div class="craft-button">
+        <h1 class="craft.btn">CRAFT</h1>
+    </div> -->
 
     <!-- <i class="fa-regular fa-block-question"></i> -->
-    <div class="bottom-container" matTooltip="These are the ingridients needed for the potion" color="primary">
+    <!-- <div class="bottom-container" matTooltip="These are the ingridients needed for the potion" color="primary">
         <div class="ingridient-block gold"><p>1/1</p></div>
         <div class="ingridient-block shrimp"><p class="red">0/1</p></div>
         <div class="ingridient-block raven"><p>3/1</p></div>
         <div class="ingridient-block eye"><p>2/1</p></div>
         <div class="ingridient-block mosquito"><p class="red">0/1</p></div>
         <div class="ingridient-block dragonTail"><p>5/1</p></div>
-    </div>
+    </div> -->
 </div>

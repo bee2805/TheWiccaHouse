@@ -4,16 +4,22 @@ h1{
     color: white;
     font-weight: bold;
     font-size: 30px;
+    font-family: 'Press Start 2P';   
 }
 
 h2{
     margin-bottom: 0;
     color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+
 }
 
 p{
     margin: 0;
     color: white;
+    font-family: 'Courier Prime', monospace;
 }
 
 .inventory-items{
@@ -26,10 +32,9 @@ p{
 }
 
 .item {
-    /* box-shadow: #673ab7 0px 5px 15px; */
     width: 18%;
     min-width: 15%;
-    height: 420px;
+    height: 460px;
     margin: 1%;
     border-radius: 10px;
     /* From https://css.glass */
@@ -39,6 +44,7 @@ p{
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(5.2px);
     /* border: 1.5px solid rgba(103, 58, 183, 1); */
+    font-family: 'Courier Prime', monospace;
 }
 
 .image{
@@ -107,7 +113,7 @@ p{
     border-top: 1.5px solid rgba(103, 58, 183, 1);
     width: 100%;
     padding: 5%;
-    height: 170px;
+    height: 210px;
     background: rgba(103, 58, 183, 0.40);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -116,22 +122,43 @@ p{
 }
 
 .left{
+    padding-top: 20px;
     width: 65%;
     float: left;
 }
 
+label{
+    color: #2b0c61;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier Prime', monospace;
+}
+
 .counter{
+    margin-top: 1px !important;
     width: 35%;
+    height: 50px;
+    padding: 3%;
+    background: transparent;
+    border: 2px solid #38107d;
     float: left;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(103, 58, 183, 0.80);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    color: rgb(225, 225, 225);
+    font-family: 'Courier Prime', monospace;
 }
 
 .btn{
-    margin-top: 3%;
+    margin-top: 25px;
     width: 100%;
+    font-family: 'Courier Prime', monospace;
 }
 
-.counter{
-    margin-top: 4%;
+.green{
+    color: rgb(22, 189, 22);
 }
 
 /* #673ab7 */

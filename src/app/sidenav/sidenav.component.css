@@ -35,6 +35,12 @@
     background-image: url('../images/logo1.png');
     background-size: contain;
     background-position: center;
+    margin-right: 10px;
+}
+
+h1{
+    font-family: 'Press Start 2P';
+    font-size: 15px;
 }
 
 .sidenav-collapsed{
@@ -117,6 +123,7 @@ h1{
     margin-left: 15%;
     margin-top: 14px;
     font-size: 20px;
+    font-family: 'Courier Prime', monospace;
 }
 
 .fa-home, .fa-book, .fa-flask{

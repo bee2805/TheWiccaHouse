@@ -2,10 +2,10 @@
     width: 105.7%;
     margin-left: -3%;
     height: 101vh;
-    background-image: url('../images/bg2.jpg');
+    background-image: url('../images/bg2.jpg') !important;
     background-size: cover;
     background-position: center;
-    z-index: 2;
+    z-index: 3;
     margin-top: -3%;
     padding: 5%;
     padding-top: 5%;
@@ -14,7 +14,7 @@
 }
 
 .intro-text{
-    width: 35%;
+    width: 40%;
     /* background-color: aqua; */
     height: auto;
     margin-top: 15%;
@@ -37,7 +37,7 @@
     justify-content:space-between;
     align-items: center;
     /* From https://css.glass */
-    background: rgba(103, 58, 183, 0.29);
+    background: rgba(103, 58, 183, 0.10);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.2px);
@@ -55,14 +55,16 @@
     margin-left: 4%;
     margin-top: 2%;
     font-weight: bold;
+    font-family: 'Courier Prime', monospace;
 }
 
 h1{
     color: white;
-    font-size: 50px;
+    font-size: 35px;
     margin-left: 4%;
-    margin-bottom: 4%;
+    margin-bottom: 5%;
     font-weight: bolder;
+    font-family: 'Press Start 2P';                                            
 }
 
 a{
@@ -75,8 +77,10 @@ h2{
     margin-left: 4%;
     margin-top: 7%;
     color: white;
+    font-family: 'Courier Prime', monospace;
 }
 
 p{
     margin-top: 25px;
+    font-family: 'Courier Prime', monospace;
 }

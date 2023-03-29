@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {FormControl} from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-crafting',
@@ -7,5 +8,19 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['./crafting.component.css']
 })
 export class CraftingComponent {
-  disabled = new FormControl(false);
+  // disabled = new FormControl(false);
+  constructor(private dialogRef: MatDialog){}
+  // check if user is verified
+  // isVerified = false
+
+  ngOnInit(){
+    let username = sessionStorage.getItem("username");
+    console.log(username);
+
+    if(username === null || username == undefined){
+      this.dialogRef.open(ModalComponent)
+    }
+  }
+
+  username = sessionStorage.getItem("username");
 }

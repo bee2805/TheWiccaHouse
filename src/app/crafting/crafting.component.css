@@ -5,7 +5,20 @@
 
 .top{
     width: 100%;
-    height: 10vh;
+    height: 10%;
+}
+
+.middle{
+    width: 100%;
+    height: 75%;
+}
+
+.bottom{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
 
 h1{
@@ -14,6 +27,7 @@ h1{
     font-size: 30px;
     float: left;
     margin-left: 1%;
+    font-family: 'Press Start 2P';  
 }
 
 select{
@@ -24,43 +38,54 @@ select{
     outline: none;
     float: right;
     border: none;
+    font-family: 'Courier Prime', monospace;
 }
 
 .left-container{
+    padding-left: 30px;
     width: 30%;
-    height: 65%;
+    height: 100%;
     float: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content:space-between;
 }
 
 .middle-container{
     width: 40%;
-    height: 65%;
+    height: 100%;
     float: left;
     margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.potion-block{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
     /* From https://css.glass */
     background: rgba(103, 58, 183, 0.29);
-    border-radius: 16px;
+    border-radius: 60px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(5.2px);
     border: 1.5px solid rgba(103, 58, 183, 1);
-    background-image: url('../images/potion2.png');
+    background-image: url('../images/block.png');
     background-position: center;
     background-size: cover;
 }
 
 .right-container{
+    padding-right: 30px;
     width: 30%;
-    height: 65%;
+    height: 100%;
     float: left;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
+    justify-content:space-between;
 }
 
 .ingridient-block{
@@ -69,7 +94,7 @@ select{
     margin: 30px;
     /* From https://css.glass */
     background: rgba(103, 58, 183, 0.29);
-    border-radius: 16px;
+    border-radius: 19px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(5.2px);
@@ -84,7 +109,7 @@ select{
 
 p{
     padding: 5%;
-    color: green;
+    color: rgb(22, 189, 22);
 }
 
 .red{
@@ -143,4 +168,29 @@ p{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+
+.craft-btn{
+    border-radius: 10px;
+    width: 20%;
+    height: 70px;
+    padding: 20px;
+    background-color: #1b1b1b;
+    text-shadow:
+    0 0 42px #673ab7,
+    0 0 82px #673ab7,
+    0 0 92px #673ab7;
+    text-align: center;
+    box-shadow:
+    0 0 .2rem #fff,
+    0 0 2rem #673ab7, 
+    0 0 0.8rem #673ab7, 
+    0 0 2.8rem #673ab7, inset 
+    0 0 1.3rem #1b1b1b;
+    font-family: 'Courier Prime', monospace;
+}
+
+.craft-btn:hover{
+    background-color: #252525;
 }

@@ -1,0 +1,13 @@
+<div class="modalBackground">
+    <h1>Verify yourself before crafting.</h1>
+
+    <div class="inputs">
+        <input matInput placeholder="Username..." [formControl]="username" type="text">
+        <input placeholder="Password..." [formControl]="password" type="password">
+    </div>
+
+    <div class="buttons">
+        <button mat-stroked-button (click)="checkVefification()" mat-dialog-close class="btn close" color="primary">Close</button>
+        <button mat-raised-button (click)="checkVefification()" class="btn" color="primary">Login</button>
+    </div>
+</div>
