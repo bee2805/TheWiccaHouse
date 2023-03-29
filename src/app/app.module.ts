@@ -22,6 +22,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AuthOnlyDirective } from './directives/auth-only.directive';
+import { FilterPipe } from './Pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AuthOnlyDirective } from './directives/auth-only.directive';
     InventoryComponent,
     CraftingComponent,
     ModalComponent,
-    AuthOnlyDirective
+    AuthOnlyDirective,
+    FilterPipe
   ],
   imports: [
     ReactiveFormsModule,

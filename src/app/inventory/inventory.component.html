@@ -27,23 +27,19 @@
 
         <mat-tab label="White Magic">
             <div class="inventory-items">
-                <div class="item">
-                    <div class="image raven"></div>
+                <div class="item" *ngFor="let item of inventory | filter: 'White Magic': 'category'">
+                    <div class="image eye"></div>
                     <div class="info">
-                        <h2>Item Name</h2>
-                        <p>Item Category</p>
-                        <p>1 available</p>
-                        <button mat-raised-button class="btn" color="primary">Update quantity</button>
-                    </div>
-                </div>
-    
-                <div class="item">
-                    <div class="image octopus"></div>
-                    <div class="info">
-                        <h2>Item Name</h2>
-                        <p>Item Category</p>
-                        <p>1 available</p>
-                        <button mat-raised-button class="btn" color="primary">Update quantity</button>
+                        <h2>{{item.name}}</h2>
+                        <div class="left">
+                            <p>{{item.category}}</p>
+                            <p class="green">{{item.quantity}} available</p>
+                        </div>
+
+                        <label>Update qty</label>
+                        <input class="counter" type="number" name="quantity" placeholder="0" type="number" [value]="item.quantity" (change)="detectQuantityChange($event)">
+
+                        <button mat-raised-button class="btn" color="primary" (click)="updateQuantity(item._id!)">Update quantity</button>
                     </div>
                 </div>
             </div>
@@ -52,23 +48,19 @@
     
         <mat-tab label="Dark Magic">
             <div class="inventory-items">
-                <div class="item">
-                    <div class="image shrimp"></div>
+                <div class="item" *ngFor="let item of inventory | filter: 'Dark Magic': 'category'">
+                    <div class="image eye"></div>
                     <div class="info">
-                        <h2>Item Name</h2>
-                        <p>Item Category</p>
-                        <p>1 available</p>
-                        <button mat-raised-button class="btn" color="primary">Update quantity</button>
-                    </div>
-                </div>
-    
-                <div class="item">
-                    <div class="image gold"></div>
-                    <div class="info">
-                        <h2>Item Name</h2>
-                        <p>Item Category</p>
-                        <p>1 available</p>
-                        <button mat-raised-button class="btn" color="primary">Update quantity</button>
+                        <h2>{{item.name}}</h2>
+                        <div class="left">
+                            <p>{{item.category}}</p>
+                            <p class="green">{{item.quantity}} available</p>
+                        </div>
+
+                        <label>Update qty</label>
+                        <input class="counter" type="number" name="quantity" placeholder="0" type="number" [value]="item.quantity" (change)="detectQuantityChange($event)">
+
+                        <button mat-raised-button class="btn" color="primary" (click)="updateQuantity(item._id!)">Update quantity</button>
                     </div>
                 </div>
             </div>
@@ -76,23 +68,19 @@
         
         <mat-tab label="Potions">
             <div class="inventory-items">
-                <div class="item">
-                    <div class="image potion"></div>
+                <div class="item" *ngFor="let item of inventory | filter: 'Potions': 'category'">
+                    <div class="image eye"></div>
                     <div class="info">
-                        <h2>Item Name</h2>
-                        <p>Item Category</p>
-                        <p>1 available</p>
-                        <button mat-raised-button class="btn" color="primary">Update quantity</button>
-                    </div>
-                </div>
-    
-                <div class="item">
-                    <div class="image potion1"></div>
-                    <div class="info">
-                        <h2>Item Name</h2>
-                        <p>Item Category</p>
-                        <p>1 available</p>
-                        <button mat-raised-button class="btn" color="primary">Update quantity</button>
+                        <h2>{{item.name}}</h2>
+                        <div class="left">
+                            <p>{{item.category}}</p>
+                            <p class="green">{{item.quantity}} available</p>
+                        </div>
+
+                        <label>Update qty</label>
+                        <input class="counter" type="number" name="quantity" placeholder="0" type="number" [value]="item.quantity" (change)="detectQuantityChange($event)">
+
+                        <button mat-raised-button class="btn" color="primary" (click)="updateQuantity(item._id!)">Update quantity</button>
                     </div>
                 </div>
             </div>

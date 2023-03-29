@@ -11,11 +11,20 @@ export class InventoryComponent {
   constructor (private itemService : InventorydbService){}
 
   inventory: Item[] = [];
+  whiteMagicItems: Item[] = [];
 
   ngOnInit(){
     this.itemService.getAllItems().subscribe((data) =>{
-      console.log(data);
       this.inventory = data;
+      console.log(data)
+
+      const whiteMagic = data.filter((item) => {
+        if(item.category === "White Magic"){
+          console.log("alright")
+        }
+      })
+      this.whiteMagicItems = whiteMagic
+      console.log(whiteMagic)
     })
   }
 
@@ -28,7 +37,6 @@ export class InventoryComponent {
 
   updateQuantity(_id: string){
     this.itemService.updateQuantity(_id, this.newQuantityPlaceholder).subscribe((item) => {
-      console.log(item.quantity);
       alert('quantity updated!')
     })
   }
