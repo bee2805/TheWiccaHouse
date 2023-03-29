@@ -39,6 +39,7 @@ select{
     float: right;
     border: none;
     font-family: 'Courier Prime', monospace;
+    font-size: 20px;
 }
 
 .left-container{
