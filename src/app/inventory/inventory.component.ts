@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Item } from '../models/item';
 import { InventorydbService } from '../services/inventorydb.service';
+import { RecipedbService } from '../services/recipedb.service';
+import { Recipe } from '../models/recipe';
 
 @Component({
   selector: 'app-inventory',
@@ -8,23 +10,17 @@ import { InventorydbService } from '../services/inventorydb.service';
   styleUrls: ['./inventory.component.css']
 })
 export class InventoryComponent {
-  constructor (private itemService : InventorydbService){}
+  constructor (private itemService : InventorydbService, private recipeService : RecipedbService){}
 
   inventory: Item[] = [];
-  whiteMagicItems: Item[] = [];
+  recipes: Recipe[] = [];
 
   ngOnInit(){
     this.itemService.getAllItems().subscribe((data) =>{
       this.inventory = data;
-      console.log(data)
-
-      const whiteMagic = data.filter((item) => {
-        if(item.category === "White Magic"){
-          console.log("alright")
-        }
-      })
-      this.whiteMagicItems = whiteMagic
-      console.log(whiteMagic)
+    }),
+    this.recipeService.getAllRecipes().subscribe((recipeData) => {
+      this.recipes = recipeData;
     })
   }
 
