@@ -55,58 +55,9 @@ p{
     height: 250px;
 }
 
-.eye{
-    background-image: url('../images/eyeball.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.potion{
-    background-image: url('../images/potion1.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.potion1{
-    background-image: url('../images/potion2.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.mosquito{
-    background-image: url('../images/mosquito.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.octopus{
-    background-image: url('../images/octopus.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.gold{
-    background-image: url('../images/gold.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.dragonTail{
-    background-image: url('../images/dragontail.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.raven{
-    background-image: url('../images/raven.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.shrimp{
-    background-image: url('../images/shrimp.png');
-    background-position: center;
-    background-size: cover;
+img{
+    width: 80%;
+    margin-left: 10%;
 }
 
 .info{

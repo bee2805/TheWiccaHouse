@@ -8,7 +8,9 @@
 
             <div class="inventory-items">
                 <div class="item" *ngFor="let item of inventory">
-                    <div class="image eye"></div>
+                    <div class="image">
+                        <img src="../../{{item.image}}">
+                    </div>
                     <div class="info">
                         <h2>{{item.name}}</h2>
                         <div class="left">
@@ -30,7 +32,9 @@
         <mat-tab label="White Magic">
             <div class="inventory-items">
                 <div class="item" *ngFor="let item of inventory | filter: 'White Magic': 'category'">
-                    <div class="image eye"></div>
+                    <div class="image">
+                        <img src="../../{{item.image}}">
+                    </div>
                     <div class="info">
                         <h2>{{item.name}}</h2>
                         <div class="left">
@@ -51,7 +55,9 @@
         <mat-tab label="Dark Magic">
             <div class="inventory-items">
                 <div class="item" *ngFor="let item of inventory | filter: 'Dark Magic': 'category'">
-                    <div class="image eye"></div>
+                    <div class="image">
+                        <img src="../../{{item.image}}">
+                    </div>
                     <div class="info">
                         <h2>{{item.name}}</h2>
                         <div class="left">
@@ -71,7 +77,9 @@
         <mat-tab label="Potions">
             <div class="inventory-items">
                 <div class="item" *ngFor="let item of inventory | filter: 'Potions': 'category'">
-                    <div class="image eye"></div>
+                    <div class="image">
+                        <img src="../../{{item.image}}">
+                    </div>
                     <div class="info">
                         <h2>{{item.name}}</h2>
                         <div class="left">
