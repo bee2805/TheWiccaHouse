@@ -18,7 +18,7 @@
     align-items:center;
     justify-content:space-between;
     /* width: 100%; */
-    margin-bottom: 600px;
+    margin-bottom: 580px;
 }
 
 .logo{
@@ -126,7 +126,15 @@ h1{
     font-family: 'Courier Prime', monospace;
 }
 
-.fa-home, .fa-book, .fa-flask{
+.logout{
+    margin-top: 30px;
+    /* text-align: left !important; */
+    color: #673ab7;
+    font-size: 20px;
+    font-family: 'Courier Prime', monospace;
+}
+
+.fa-home, .fa-book, .fa-flask, .fa-arrow-right-from-bracket{
     margin-left: 3px;
     margin-top: 18px;
     font-size: 30px;

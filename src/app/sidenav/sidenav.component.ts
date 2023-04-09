@@ -16,6 +16,8 @@ interface SideNavToggle{
 })
 export class SidenavComponent {
 
+  username = sessionStorage.getItem("username");
+
   @Output() onToggleSideNav: EventEmitter<SideNavToggle> = new EventEmitter();
   collapsed = false;
   screenWidth = 0;
@@ -29,6 +31,11 @@ export class SidenavComponent {
   closeNav(): void {
     this.collapsed = false;
     this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth})
+  }
+
+  logout(){
+    sessionStorage.clear();
+    alert('You have logged out');
   }
 
 }

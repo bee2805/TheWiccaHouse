@@ -14,5 +14,7 @@
                 <span class="link-text" *ngIf="collapsed"><p>{{data.label}}</p></span>
             </a>
         </li>
+
+        <p *ngIf="username" class="logout" (click)="logout()">Logout</p>
     </ul>
 </div>

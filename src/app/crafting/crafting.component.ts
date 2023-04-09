@@ -19,8 +19,18 @@ export class CraftingComponent {
 
     if(username === null || username == undefined){
       this.dialogRef.open(ModalComponent)
+    } else {
+      this.dialogRef.closeAll()
     }
   }
 
   username = sessionStorage.getItem("username");
+
+  craft(){
+    if(this.username === null || this.username == undefined){
+      this.dialogRef.open(ModalComponent)
+    } else {
+      
+    }
+  }
 }
