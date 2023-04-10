@@ -23,6 +23,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AuthOnlyDirective } from './directives/auth-only.directive';
 import { FilterPipe } from './Pipes/filter.pipe';
+import { PotionCraftedModalComponent } from './potion-crafted-modal/potion-crafted-modal.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FilterPipe } from './Pipes/filter.pipe';
     CraftingComponent,
     ModalComponent,
     AuthOnlyDirective,
-    FilterPipe
+    FilterPipe,
+    PotionCraftedModalComponent
   ],
   imports: [
     ReactiveFormsModule,

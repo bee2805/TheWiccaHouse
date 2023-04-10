@@ -33,6 +33,7 @@ export class InventoryComponent {
 
   updateQuantity(_id: string){
     this.itemService.updateQuantity(_id, this.newQuantityPlaceholder).subscribe((item) => {
+      // window.location.reload()
       alert('quantity updated!')
     })
   }

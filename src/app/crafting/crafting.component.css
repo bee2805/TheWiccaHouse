@@ -84,6 +84,13 @@ select{
     width: 100%;
 }
 
+.potion-block img:hover{
+    width: 105%;
+    transition: all .5s ease;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+
 .right-container{
     padding-right: 30px;
     width: 30%;
@@ -110,6 +117,12 @@ select{
 
 .ingredient-block img{
     width: 100%;
+}
+
+.ingredient-block img:hover{
+    width: 105%;
+    transition: all .5s ease;
+    margin-left: -1.5%;
 }
 
 .bottom-container{
@@ -156,6 +169,7 @@ select{
     0 0 1.3rem #1b1b1b;
     font-family: 'Courier Prime', monospace;
     color: #8b8b8b;
+    cursor: not-allowed;
 }
 
 .craft-btn:hover{
@@ -175,3 +189,4 @@ p{
 .red{
     color: rgb(242, 56, 56);
 }
+

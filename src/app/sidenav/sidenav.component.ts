@@ -36,6 +36,7 @@ export class SidenavComponent {
   logout(){
     sessionStorage.clear();
     alert('You have logged out');
+    window.location.reload()
   }
 
 }

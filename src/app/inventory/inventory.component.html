@@ -23,7 +23,7 @@
                         <label>Update qty</label>
                         <input class="counter" type="number" name="quantity" placeholder="0" type="number" [value]="item.quantity" (change)="detectQuantityChange($event)">
 
-                        <button mat-raised-button class="btn" color="primary" (click)="updateQuantity(item._id!)">Update quantity</button>
+                        <button class="btn filled" color="primary" (click)="updateQuantity(item._id!)">Update quantity</button>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                         <label>Update qty</label>
                         <input class="counter" type="number" name="quantity" placeholder="0" type="number" [value]="item.quantity" (change)="detectQuantityChange($event)">
 
-                        <button mat-raised-button class="btn" color="primary" (click)="updateQuantity(item._id!)">Update quantity</button>
+                        <button class="btn filled" color="primary" (click)="updateQuantity(item._id!)">Update quantity</button>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                         <label>Update qty</label>
                         <input class="counter" type="number" name="quantity" placeholder="0" type="number" [value]="item.quantity" (change)="detectQuantityChange($event)">
 
-                        <button mat-raised-button class="btn" color="primary" (click)="updateQuantity(item._id!)">Update quantity</button>
+                        <button class="btn filled" color="primary" (click)="updateQuantity(item._id!)">Update quantity</button>
                     </div>
                 </div>
             </div>
@@ -76,13 +76,17 @@
         
         <mat-tab label="Potions">
             <div class="inventory-items">
-                <div class="item" *ngFor="let recipe of recipes">
-                    <div class="image">
+                <div class=" potion-item" *ngFor="let recipe of recipes">
+                    <div class="potion-image">
                         <img src="../../{{recipe.image}}">
                     </div>
-                    <div class="info">
-                        <h2>{{recipe.name}}</h2>
+                    <div class="potion-info">
+                        <div class="potionheading">
+                            <h2>{{recipe.name}}</h2>
+                        </div>
                         <div class="left">
+                            <p class="green amount" *ngIf="recipe.amount! >= 4">{{recipe.amount}} available</p>
+                            <p class="orange amount" *ngIf="recipe.amount == 1 || recipe.amount == 2 || recipe.amount == 3">{{recipe.amount}} available</p>
                             <p class="red amount" *ngIf="recipe.amount == 0">No inventory</p>
                         </div>
                     </div>
