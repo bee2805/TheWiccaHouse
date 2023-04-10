@@ -19,4 +19,9 @@ export class RecipedbService {
   getAllRecipes(): Observable<Recipe[]>{
     return this.http.get<Recipe[]>(this.url)
   }
+
+  // method to craft
+  craftRecipe(recipeId: string){
+    return this.http.post<any>(`${this.url}/craft`, {recipeId})
+  }
 }

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component';
+import { RecipedbService } from '../services/recipedb.service';
+import { Recipe } from '../models/recipe';
 
 @Component({
   selector: 'app-crafting',
@@ -9,9 +11,39 @@ import { ModalComponent } from '../modal/modal.component';
 })
 export class CraftingComponent {
   // disabled = new FormControl(false);
-  constructor(private dialogRef: MatDialog){}
-  // check if user is verified
-  // isVerified = false
+  constructor(private dialogRef: MatDialog, private recipeService : RecipedbService){}
+
+  recipes: Recipe[] = [];
+  selectedRecipe?: string;
+  filtered!: any;
+
+  craftable?: boolean;
+  recipe_id?: String;
+
+  // declaring variables for images
+  recipeImage?: string;
+  ingridientOneImage?: string;
+  ingridientTwoImage?: string;
+  ingridientThreeImage?: string;
+  ingridientFourImage?: string;
+  ingridientFiveImage?: string;
+  ingridientSixImage?: string;
+
+  // declaring variables for ingridient quantities
+  ingridientOneAmount?: number;
+  ingridientOneAmountNeeded?: number;
+  ingridientTwoAmount?: number;
+  ingridientTwoAmountNeeded?: number;
+  ingridientThreeAmount?: number;
+  ingridientThreeAmountNeeded?: number;
+  ingridientFourAmount?: number;
+  ingridientFourAmountNeeded?: number;
+  ingridientFiveAmount?: number;
+  ingridientFiveAmountNeeded?: number;
+  ingridientSixAmount?: number;
+  ingridientSixAmountNeeded?: number;
+
+  isCrafting = false;
 
   ngOnInit(){
     let username = sessionStorage.getItem("username");
@@ -22,15 +54,62 @@ export class CraftingComponent {
     } else {
       this.dialogRef.closeAll()
     }
+
+    this.recipeService.getAllRecipes().subscribe((recipeData) => {
+      this.recipes = recipeData;
+    })
+  }
+
+  recipeChange(){
+    // I know I could probably do this in way less lines buuuuttt...
+
+    this.filtered = this.recipes.find((obj) => {return obj.name == this.selectedRecipe})
+    console.log(this.filtered._id)
+    // setting images
+    this.recipeImage = this.filtered?.image;
+    this.ingridientOneImage = this.filtered?.ingredients[0]?.inventoryId.image;
+    this.ingridientTwoImage = this.filtered?.ingredients[1]?.inventoryId.image;
+    this.ingridientThreeImage = this.filtered?.ingredients[2]?.inventoryId.image;
+    this.ingridientFourImage = this.filtered?.ingredients[3]?.inventoryId.image;
+    this.ingridientFiveImage = this.filtered?.ingredients[4]?.inventoryId.image;
+    this.ingridientSixImage = this.filtered?.ingredients[5]?.inventoryId.image;
+    // setting quantities
+    this.ingridientOneAmount = this.filtered.ingredients[0].inventoryId.quantity;
+    this.ingridientOneAmountNeeded = this.filtered.ingredients[0].amountNeeded;
+    this.ingridientTwoAmount = this.filtered.ingredients[1].inventoryId.quantity;
+    this.ingridientTwoAmountNeeded = this.filtered.ingredients[1].amountNeeded;
+    this.ingridientThreeAmount = this.filtered.ingredients[2].inventoryId.quantity;
+    this.ingridientThreeAmountNeeded = this.filtered.ingredients[2].amountNeeded;
+    this.ingridientFourAmount = this.filtered.ingredients[3].inventoryId.quantity;
+    this.ingridientFourAmountNeeded = this.filtered.ingredients[3].amountNeeded;
+    this.ingridientFiveAmount = this.filtered.ingredients[4].inventoryId.quantity;
+    this.ingridientFiveAmountNeeded = this.filtered.ingredients[4].amountNeeded;
+    this.ingridientSixAmount = this.filtered.ingredients[5].inventoryId.quantity;
+    this.ingridientSixAmountNeeded = this.filtered.ingredients[5].amountNeeded;
+
+    this.craftable = this.filtered.craftable
   }
 
   username = sessionStorage.getItem("username");
 
-  craft(){
+  craftRecipe(recipeId : string){
+    this.isCrafting = true
     if(this.username === null || this.username == undefined){
       this.dialogRef.open(ModalComponent)
     } else {
-      
+      console.log("Selected Recipe Id: " + this.filtered._id);
+
+      this.recipeService.craftRecipe(recipeId!).subscribe((response) => {
+        this.isCrafting = false
+        if(response.success){
+          alert('you have crafted a new potion!')
+        }
+      })
     }
   }
+
+  nocraft(){
+    alert('You cannot craft this potion. You have insufficient recources')
+  }
+  
 }
