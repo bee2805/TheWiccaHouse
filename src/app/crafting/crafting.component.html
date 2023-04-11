@@ -13,19 +13,22 @@
         <div class="left-container">
             <div class="ingredient-block">
                 <div *ngIf="selectedRecipe">
-                    <p class="green">{{ingridientOneAmount}} / {{ingridientOneAmountNeeded}}</p>
+                    <p *ngIf="ingridientOneAmount! >= ingridientOneAmountNeeded!" class="green">{{ingridientOneAmount}} / {{ingridientOneAmountNeeded}}</p>
+                    <p *ngIf="ingridientOneAmount! < ingridientOneAmountNeeded!" class="red">{{ingridientOneAmount}} / {{ingridientOneAmountNeeded}}</p>
                 </div>
                 <img src="{{ingridientOneImage || '../../assets/block.png'}}" alt="ingridient required">
             </div>
             <div class="ingredient-block nan" >
                 <div  *ngIf="selectedRecipe">
-                    <p class="green">{{ingridientTwoAmount}} / {{ingridientTwoAmountNeeded}}</p>
+                    <p *ngIf="ingridientTwoAmount! >= ingridientTwoAmountNeeded!" class="green">{{ingridientTwoAmount}} / {{ingridientTwoAmountNeeded}}</p>
+                    <p *ngIf="ingridientTwoAmount! < ingridientTwoAmountNeeded!" class="red">{{ingridientTwoAmount}} / {{ingridientTwoAmountNeeded}}</p>
                 </div>
                 <img src="{{ingridientTwoImage || '../../assets/block.png'}}" alt="ingridient required">
             </div>
             <div class="ingredient-block nan">
                 <div  *ngIf="selectedRecipe">
-                    <p class="green">{{ingridientThreeAmount}} / {{ingridientThreeAmountNeeded}}</p>
+                    <p *ngIf="ingridientThreeAmount! >= ingridientThreeAmountNeeded!" class="green">{{ingridientThreeAmount}} / {{ingridientThreeAmountNeeded}}</p>
+                    <p *ngIf="ingridientThreeAmount! < ingridientThreeAmountNeeded!" class="red">{{ingridientThreeAmount}} / {{ingridientThreeAmountNeeded}}</p>
                 </div>
                 <img src="{{ingridientThreeImage || '../../assets/block.png'}}" alt="ingridient required">
             </div>
@@ -40,19 +43,22 @@
         <div class="right-container">
             <div class="ingredient-block nan">
                 <div  *ngIf="selectedRecipe">
-                    <p class="green">{{ingridientFourAmount}} / {{ingridientFourAmountNeeded}}</p>
+                    <p *ngIf="ingridientFourAmount! >= ingridientFourAmountNeeded!" class="green">{{ingridientFourAmount}} / {{ingridientFourAmountNeeded}}</p>
+                    <p *ngIf="ingridientFourAmount! < ingridientFourAmountNeeded!" class="red">{{ingridientFourAmount}} / {{ingridientFourAmountNeeded}}</p>
                 </div>
                 <img src="{{ingridientFourImage || '../../assets/block.png'}}" alt="ingridient required">
             </div>
             <div class="ingredient-block nan">
                 <div  *ngIf="selectedRecipe">
-                    <p class="green">{{ingridientFiveAmount}} / {{ingridientFiveAmountNeeded}}</p>
+                    <p *ngIf="ingridientFiveAmount! >= ingridientFiveAmountNeeded!" class="green">{{ingridientFiveAmount}} / {{ingridientFiveAmountNeeded}}</p>
+                    <p *ngIf="ingridientFiveAmount! < ingridientFiveAmountNeeded!" class="red">{{ingridientFiveAmount}} / {{ingridientFiveAmountNeeded}}</p>
                 </div>
                 <img src="{{ingridientFiveImage || '../../assets/block.png'}}" alt="ingridient required">
             </div>
             <div class="ingredient-block nan">
                 <div  *ngIf="selectedRecipe">
-                    <p class="green">{{ingridientSixAmount}} / {{ingridientSixAmountNeeded}}</p>
+                    <p *ngIf="ingridientSixAmount! >= ingridientSixAmountNeeded!" class="green">{{ingridientSixAmount}} / {{ingridientSixAmountNeeded}}</p>
+                    <p *ngIf="ingridientSixAmount! < ingridientSixAmountNeeded!" class="red">{{ingridientSixAmount}} / {{ingridientSixAmountNeeded}}</p>
                 </div>
                 <img src="{{ingridientSixImage || '../../assets/block.png'}}" alt="ingridient required">
             </div>
