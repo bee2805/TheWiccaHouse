@@ -15,6 +15,8 @@
     margin-top: 25px;
     font-family: 'Courier Prime', monospace;
     margin: 0 auto;
+    float: right;
+    font-size: 18px;
 }
 
 h1{
@@ -29,36 +31,8 @@ h1{
     height: 37px;
 }
 
-.btn{
-    float: right;
-    font-size: 18px;
-}
-
 .close{
     margin-left: 15px;
-}
-
-.potion-img{
-    margin: 0 auto;
-    width: 500px;
-    height: 500px;
-}
-
-img{
-    width: 100%;
-}
-
-.stroked{
-    font-size: 18px;
-    padding: 10px 30px;
-    color: #38107d;
-    background-color: rgba(103, 58, 183, 0.50);
-    border: #38107d 2px solid;
-    border-radius: 10px;
-    margin-top: 25px;
-    font-family: 'Courier Prime', monospace;
-    margin: 0 auto;
-    font-size: 18px;
 }
 
 .filled{
@@ -72,15 +46,21 @@ img{
     font-family: 'Courier Prime', monospace;
     margin: 0 auto;
     font-size: 18px;
-}
-
-.stroked:hover{
-    background-color: rgba(103, 58, 183, 0.80);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    outline: none;
 }
 
 .filled:hover{
     background-color: #2a0c5f;
     border: #2a0c5f 2px solid;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+p{
+    margin: 0;
+    font-family: 'Courier Prime', monospace;
+    font-size: 18px;
+}
+
+.red{
+    color: rgb(242, 56, 56);
 }

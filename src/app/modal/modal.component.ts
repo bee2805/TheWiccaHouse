@@ -17,12 +17,10 @@ export class ModalComponent {
   checkVefification(){
     this.verify.checkVerification(this.username.value!, this.password.value!).subscribe((response) => {
       if(response.success){
-        alert('you have successfully logged in!');
         sessionStorage.setItem("username", this.username.value!);
         window.location.reload();
       } else {
         alert('you have entered your username or password wrong, try again.');
-        console.log("error has occurred");
       }
     })
   }

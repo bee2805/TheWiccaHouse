@@ -39,7 +39,9 @@
                         <h2>{{item.name}}</h2>
                         <div class="left">
                             <p>{{item.category}}</p>
-                            <p class="green">{{item.quantity}} available</p>
+                            <p class="green amount" *ngIf="item.quantity >= 4">{{item.quantity}} available</p>
+                            <p class="orange amount" *ngIf="item.quantity == 1 || item.quantity == 2 || item.quantity == 3">{{item.quantity}} available</p>
+                            <p class="red amount" *ngIf="item.quantity == 0">No inventory</p>
                         </div>
 
                         <label>Update qty</label>
@@ -62,7 +64,9 @@
                         <h2>{{item.name}}</h2>
                         <div class="left">
                             <p>{{item.category}}</p>
-                            <p class="green">{{item.quantity}} available</p>
+                            <p class="green amount" *ngIf="item.quantity >= 4">{{item.quantity}} available</p>
+                            <p class="orange amount" *ngIf="item.quantity == 1 || item.quantity == 2 || item.quantity == 3">{{item.quantity}} available</p>
+                            <p class="red amount" *ngIf="item.quantity == 0">No inventory</p>
                         </div>
 
                         <label>Update qty</label>
@@ -82,12 +86,14 @@
                     </div>
                     <div class="potion-info">
                         <div class="potionheading">
-                            <h2>{{recipe.name}}</h2>
-                        </div>
-                        <div class="left">
+                            <h2 class="recipe-heading">{{recipe.name}}</h2>
                             <p class="green amount" *ngIf="recipe.amount! >= 4">{{recipe.amount}} available</p>
                             <p class="orange amount" *ngIf="recipe.amount == 1 || recipe.amount == 2 || recipe.amount == 3">{{recipe.amount}} available</p>
                             <p class="red amount" *ngIf="recipe.amount == 0">No inventory</p>
+                        </div>
+
+                        <div class="description">
+                            <p>{{recipe.description}}</p>
                         </div>
                     </div>
                 </div>

@@ -4,6 +4,7 @@ import { ModalComponent } from '../modal/modal.component';
 import { RecipedbService } from '../services/recipedb.service';
 import { Recipe } from '../models/recipe';
 import { PotionCraftedModalComponent } from '../potion-crafted-modal/potion-crafted-modal.component';
+import { CannotCraftComponent } from '../cannot-craft/cannot-craft.component';
 
 @Component({
   selector: 'app-crafting',
@@ -61,15 +62,9 @@ export class CraftingComponent {
     })
   }
 
-  // reloadPage(){
-  //   window.location.reload()
-  // }
-
   recipeChange(){
     // I know I could probably do this in way less lines buuuuttt...
-
     this.filtered = this.recipes.find((obj) => {return obj.name == this.selectedRecipe})
-    console.log(this.filtered._id)
     // setting images
     this.recipeImage = this.filtered?.image;
     this.ingridientOneImage = this.filtered?.ingredients[0]?.inventoryId.image;
@@ -98,34 +93,25 @@ export class CraftingComponent {
   username = sessionStorage.getItem("username");
 
   craftRecipe(recipeId : string){
-    this.isCrafting = true
     if(this.username === null || this.username == undefined){
       this.dialogRef.open(ModalComponent)
     } else {
-      console.log("Selected Recipe Id: " + this.filtered._id);
-
+      this.isCrafting = true
       this.recipeService.craftRecipe(recipeId!).subscribe((response) => {
         this.isCrafting = false
         if(response.success){
-          // window.location.reload()
-          // alert('you have crafted a new potion!')
           this.dialogRef.open(PotionCraftedModalComponent, {
             data: {
               name: this.filtered.name,
               image: this.recipeImage
             }
           });
-          // window.location.reload()
         }
       })
     }
   }
 
   nocraft(){
-    if(this.username === null || this.username == undefined){
-      this.dialogRef.open(ModalComponent)
-    } else {
-      alert('You cannot craft this potion. You have insufficient recources')
-    }
+    this.dialogRef.open(CannotCraftComponent)
   }
 }

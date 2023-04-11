@@ -3,6 +3,9 @@ import { Item } from '../models/item';
 import { InventorydbService } from '../services/inventorydb.service';
 import { RecipedbService } from '../services/recipedb.service';
 import { Recipe } from '../models/recipe';
+import { UpdatedModalComponent } from '../updated-modal/updated-modal.component';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-inventory',
@@ -10,10 +13,11 @@ import { Recipe } from '../models/recipe';
   styleUrls: ['./inventory.component.css']
 })
 export class InventoryComponent {
-  constructor (private itemService : InventorydbService, private recipeService : RecipedbService){}
+  constructor (private itemService : InventorydbService, private recipeService : RecipedbService, private dialogRef: MatDialog){}
 
   inventory: Item[] = [];
   recipes: Recipe[] = [];
+  username = sessionStorage.getItem("username");
 
   ngOnInit(){
     this.itemService.getAllItems().subscribe((data) =>{
@@ -32,10 +36,19 @@ export class InventoryComponent {
   }
 
   updateQuantity(_id: string){
-    this.itemService.updateQuantity(_id, this.newQuantityPlaceholder).subscribe((item) => {
-      // window.location.reload()
-      alert('quantity updated!')
-    })
+    if(this.username === null || this.username == undefined){
+      this.dialogRef.open(ModalComponent)
+    } else {
+      this.itemService.updateQuantity(_id, this.newQuantityPlaceholder).subscribe((item) => {
+        this.dialogRef.open(UpdatedModalComponent, {
+          data: {
+            name: item.name,
+            image: item.image,
+            quantity: this.newQuantityPlaceholder
+          }
+        });
+      })
+    }
   }
 
 }

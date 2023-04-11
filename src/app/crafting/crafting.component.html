@@ -1,9 +1,10 @@
 <div class="container">
 
     <div class="top">
-        <h1>Craft your potion {{username | uppercase }}!</h1>
+        <h1>Get Crafting {{username | uppercase }}!</h1>
         <br>
         <select (change)="recipeChange()" [(ngModel)]="selectedRecipe">
+            <!-- <option value="select recipe" selected>Select recipe</option> -->
             <option *ngFor="let recipe of recipes" value="{{recipe.name}}">{{recipe.name}}</option>
         </select>
     </div>

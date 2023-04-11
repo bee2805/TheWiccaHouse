@@ -1,5 +1,4 @@
-import { DialogRef } from '@angular/cdk/dialog';
-import { Component, Inject, inject } from '@angular/core';
+import { Component, Inject} from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { CraftingComponent } from '../crafting/crafting.component';
 
@@ -12,10 +11,9 @@ export class PotionCraftedModalComponent {
 
   recievedData;
 
-  constructor(public dialogRef: MatDialogRef<CraftingComponent>, 
-    @Inject(MAT_DIALOG_DATA) public data: any){
-      this.recievedData = data;
-    }
+  constructor(public dialogRef: MatDialogRef<CraftingComponent>,@Inject(MAT_DIALOG_DATA) public data: any){
+    this.recievedData = data;
+  }
   
   close(){
     window.location.reload()

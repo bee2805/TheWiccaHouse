@@ -8,6 +8,11 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AuthOnlyDirective } from './directives/auth-only.directive';
+import { FilterPipe } from './Pipes/filter.pipe';
+import { PotionCraftedModalComponent } from './potion-crafted-modal/potion-crafted-modal.component';
+import { UpdatedModalComponent } from './updated-modal/updated-modal.component';
+import { LoaderComponent } from './loader/loader.component';
 
 // angular material
 import { MatButtonModule } from '@angular/material/button';
@@ -21,9 +26,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule } from '@angular/material/dialog';
-import { AuthOnlyDirective } from './directives/auth-only.directive';
-import { FilterPipe } from './Pipes/filter.pipe';
-import { PotionCraftedModalComponent } from './potion-crafted-modal/potion-crafted-modal.component';
+import { LoggedOutComponent } from './logged-out/logged-out.component';
+import { CannotCraftComponent } from './cannot-craft/cannot-craft.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { PotionCraftedModalComponent } from './potion-crafted-modal/potion-craft
     ModalComponent,
     AuthOnlyDirective,
     FilterPipe,
-    PotionCraftedModalComponent
+    PotionCraftedModalComponent,
+    UpdatedModalComponent,
+    LoaderComponent,
+    LoggedOutComponent,
+    CannotCraftComponent
   ],
   imports: [
     ReactiveFormsModule,

@@ -11,39 +11,15 @@
     border: 1.5px solid rgba(103, 58, 183, 1);
 }
 
-.stroked{
-    font-size: 18px;
-    padding: 10px 30px;
-    color: #38107d;
-    background-color: rgba(103, 58, 183, 0.50);
-    border: #38107d 2px solid;
-    border-radius: 10px;
+p{
+    margin: 0;
+    font-family: 'Courier Prime', monospace;
+}
+
+.btn{
     margin-top: 25px;
     font-family: 'Courier Prime', monospace;
     margin: 0 auto;
-}
-
-.filled{
-    font-size: 18px;
-    padding: 10px 30px;
-    color: white;
-    background-color: #38107d;
-    border: #38107d 2px solid;
-    border-radius: 10px;
-    margin-top: 25px;
-    font-family: 'Courier Prime', monospace;
-    margin: 0 auto;
-}
-
-.stroked:hover{
-    background-color: rgba(103, 58, 183, 0.80);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-}
-
-.filled:hover{
-    background-color: #2a0c5f;
-    border: #2a0c5f 2px solid;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 h1{
@@ -51,34 +27,6 @@ h1{
     font-size: 20px; 
     margin-bottom: 20px;
     color: white;
-}
-
-.inputs{
-    width: 100%;
-    height: 155px;
-}
-
-input{
-    margin-bottom: 15px;
-    width: 100% !important;
-    margin-top: 1px !important;
-    width: 35%;
-    height: 50px;
-    padding: 2%;
-    border: 2px solid #38107d;
-    float: left;
-    border-radius: 10px;
-    outline: none;
-    background: rgba(103, 58, 183, 0.60);
-    backdrop-filter: blur(5.2px);
-    -webkit-backdrop-filter: blur(5.2px);
-    color: white;
-    font-family: 'Courier Prime', monospace;
-    font-size: 20px;
-}
-
-::placeholder{
-    color: #38107d;
 }
 
 .buttons{
@@ -95,3 +43,53 @@ input{
     margin-left: 15px;
 }
 
+.ingredient-img{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+
+img{
+    width: 100%;
+}
+
+.stroked{
+    font-size: 18px;
+    padding: 10px 30px;
+    color: #38107d;
+    background-color: rgba(103, 58, 183, 0.50);
+    border: #38107d 2px solid;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-family: 'Courier Prime', monospace;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.filled{
+    font-size: 18px;
+    padding: 10px 30px;
+    color: white;
+    background-color: #38107d;
+    border: #38107d 2px solid;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-family: 'Courier Prime', monospace;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.stroked:hover{
+    background-color: rgba(103, 58, 183, 0.80);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.filled:hover{
+    background-color: #2a0c5f;
+    border: #2a0c5f 2px solid;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.green{
+    color: rgb(22, 189, 22);
+}

@@ -3,6 +3,9 @@
 
 import { Component, EventEmitter, Output } from '@angular/core';
 import { navbarData } from './nav-data';
+import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { LoggedOutComponent } from '../logged-out/logged-out.component';
 
 interface SideNavToggle{
   screenWidth: number;
@@ -15,6 +18,7 @@ interface SideNavToggle{
   styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent {
+  constructor(public router:Router, private dialogRef: MatDialog) { }
 
   username = sessionStorage.getItem("username");
 
@@ -35,8 +39,7 @@ export class SidenavComponent {
 
   logout(){
     sessionStorage.clear();
-    alert('You have logged out');
-    window.location.reload()
+    this.dialogRef.open(LoggedOutComponent)
   }
 
 }

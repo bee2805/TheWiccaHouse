@@ -1,0 +1,12 @@
+<div class="modalBackground">
+    <h1>Your {{recievedData.name}} inventory has been updated!</h1>
+    <p class="green">You now have {{recievedData.quantity}} available</p>
+
+    <div class="ingredient-img">
+        <img src="../../{{recievedData.image}}" alt="image of potion">
+    </div>
+
+    <div class="buttons">
+        <button mat-dialog-close class="btn filled close" (click)="close()">Close</button>
+    </div>
+</div>
