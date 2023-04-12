@@ -21,9 +21,6 @@
   <a href="https://github.com/bee2805/TheWiccaHouse">
     <img src="app/src/main/res/drawable/logo.png" alt="Logo" width="140" height="140">
   </a>
-
-  <p align="center">
-    The Wicca House is the place to go to fulfill all your wicca needs! This MEAN stack application allowa users to track an inventory full of different ingredients and use their inventory to craft magical potions! All data is stored on MongoDB and dynamically displayed using angular components.<br>
     
    <br />
    <br />
@@ -34,8 +31,9 @@
     ·
     <a href="https://github.com/bee2805/TheWiccaHouse/issues">Request Feature</a>
 </p>
-<!-- TABLE OF CONTENTS -->
 
+<!-- TABLE OF CONTENTS -->
+<!-- TODO: Edit table of contents -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -65,17 +63,20 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 <!-- header image of project -->
-![image1](https://github.com/bee2805/TheWiccaHouse/blob/main/app/src/main/res/drawable/cover_photo.jpg)
+![image1](https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/Mockup1.png)
 
 ### Project Description
 
-Welcome to the OK Boomer mobile trivia application! It is no secret that each generation thinks they’re better than the next, so, this game was designed to put that to the test!
+The Wicca House is the place to go to fulfill all your wicca needs! This MEAN stack application allowa users to track an inventory full of different ingredients and use their inventory to craft magical potions! All data is stored on MongoDB and dynamically displayed using angular components.
 
 ### Built With
 
-* [Android Studio](https://developer.android.com/studio?gclid=CjwKCAjw3qGYBhBSEiwAcnTRLudtJ2FIlpZp7wRlpahXN_ZNMtz229FDIOG7RtDaLKjgrbFTDy7y5hoCzcYQAvD_BwE&gclsrc=aw.ds)
-* [Kotlin](https://kotlinlang.org/)
-* XML
+* [MongoDb](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-za_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624560&adgroup=115749711783&cq_cmp=12212624560&gclid=CjwKCAjwrdmhBhBBEiwA4Hx5gwIGpkEruXr_caRUjW88LyJqH6PRomd6JRg8vT2zCXD2nG2yF58cwBoCmsQQAvD_BwE)
+* [Express](https://expressjs.com/)
+* [Angular](https://angular.io/)
+* [Node](https://nodejs.org/en)
+* [Typescript](https://www.typescriptlang.org/)
+* [AngularMaterial](https://material.angular.io/)
 
 ## Getting Started
 <!-- GETTING STARTED -->
@@ -141,29 +142,16 @@ The inventory page showcases a list of all the ingredients in the inventory. The
 
 ![image3](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/categories.jpg)
 
-### Questions
+### Crafting Section
 
-There are three different views for each question type. Two of the question types have three options in which you can pick and the lyric-based question view allows users to answer by typing in the answer. As the user plays each category, points will accumulate for each correct answer.
+Here, the user (if verified) will be able to select a potion that they wish to craft. The potion can only be crafted if there are enough ingredients in the inventory. Once a potion is crafted, it can be found on the unventory page under 'potions', and the quantity of the used ingridients will be updated accordingly.
 
 ![image4](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/question_screen.jpg)
 
-### Results/Scores
-
-The result screen displays after a user have completed a category. The score from the specific Category played is displayed here.
-
-![image5](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/results.jpg)
-
-
 <!-- CONCEPT PROCESS -->
-<!-- Briefly explain your concept ideation process -->
-<!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
 ## Concept Process
 
-* I thought about the goals that I wanted to achieve with this app. The main goal was definitely to create an app that brings people together, so I jotted down a few ideas that could achieve this goal. The first ideas I got were either not exciting enough, or they were interest-specific. 
-* After bashing ideas around my brain, I finally conclude that a generation quiz would not only be super fun and inclusive, but would also bring on that nostalgia feeling, and I think we can all admit that it’s a great feeling to have!
-* I then decided on the categories that I wanted to include and after some amazing advice, I added an extra category that tells you which generation your soul belongs to!
-
-After setting this up, I went ahead and did some research on different trivia games or apps to get a bit of inspiration for the brand and layout of the app. It was then that I ran into this amazing card game called OK boomer on Behance. After completely falling in love with this whole idea as well as the branding, I mean, how could you not?!!! I got inspired and decided to base my app on this card game.
+* 
 
 ### Ideation
 
@@ -181,10 +169,10 @@ After setting this up, I went ahead and did some research on different trivia ga
 <!-- stipulate all of the functionality you included in the project -->
 <!-- This is your time to shine, explain the technical nuances of your project, how did you achieve the final outcome!-->
 
-* Validation of inputs
-* XML for the layout and styling
-* Kotlin for the functionality
-* Different questions are dynamically displayed
+* I started off my angular project by generating components and styling them using html and css
+* I added routing and incuded all appropriate navigation links
+* The next step was to then set up my back end with appropriate shemas routs for my CRUD functinality
+* Got the data and displayed it dynamically in angular components
 
 #### Highlights
 <!-- stipulated the highlight you experienced with the project -->
