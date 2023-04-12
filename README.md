@@ -42,20 +42,19 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [How to install](#how-to-install)
+* [Angular Know How](#angular-know-how)
 * [Features and Functionality](#features-and-functionality)
 * [Concept Process](#concept-process)
    * [Ideation](#ideation)
    * [Wireframes](#wireframes)
-   * [Custom UI](#user-flow)
 * [Development Process](#development-process)
    * [Implementation Process](#implementation-process)
         * [Highlights](#highlights)
         * [Challenges](#challenges)
-   * [Future Implementation](#peer-reviews)
+   * [Future Implementation](#future-implementation)
 * [Final Outcome](#final-outcome)
-    * [Mockups](#mockups)
+    * [Final Mockup](#final-mockup)
     * [Video Demonstration](#video-demonstration)
-* [Conclusion](#conclusion)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -151,16 +150,16 @@ Here, the user (if verified) will be able to select a potion that they wish to c
 <!-- CONCEPT PROCESS -->
 ## Concept Process
 
-* 
+* I started off my ideation process by coming up with a few ideas for the theme. Once I had my theme in place, I thought about different ingredients and potions that could be included. Thereafter, I sketched my initial wifeframes and got to work!
 
 ### Ideation
 
-![image6](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/concept_ideation.jpg)
+![image5](https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/Ideation.png)
 <br>
 
 ### Wireframes
 
-![image7](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/wireframes.jpg)
+![image6](https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/Wireframes.png)
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -175,45 +174,34 @@ Here, the user (if verified) will be able to select a potion that they wish to c
 * Got the data and displayed it dynamically in angular components
 
 #### Highlights
-<!-- stipulated the highlight you experienced with the project -->
-* It was super exciting to learn Kotlin and build my very first android app!
-* Ater getting my muse, which was OK Boomer, the excitement grew each day. I had a lot of fun doing the research, especially for the lyric-based questions. 
-* I had a lot of fun doing the research, especially for the lyric-based questions. 
+* Overall, The theme of this project was really cool. It allowed me to be super creative and free with my design choices.
+* I really enjoyed learning Angular and Typescript
+* The crafting section was my favorite part. 
 
 #### Challenges
 <!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
-* Because of the way I set up my questions, I had challenges when trying to navigate to the next question activity in a specific genre.
-* I struggled to set the session storage for the scores from each category from the results activity.
+* I struggled with the select on the crafting page and inputting that data dynamically. At the end of the day I was successful, however I believe I would be able to achive the same functionality in a much simpler way and in less lines of code. I aim to acieve this in the future.
+* I also struggled to have a defualt value on the select option because I used the value property to filter my data.
 
 
 #### Above And Beyond
 
-* I implemented different ways in which a question can be answered - Either a text input with appropriate validation or selecting between three answers.
-* 8 questions per category instead of 5
-* 5 categories instead of 3
+* I added modals that pop up once editing and crafting inventory with data passed to those modals that showcase what exactly was crafted/edited.
+* The side nav was also implemented following a tutorial found on youtube.
 
 ### Future Implementation
 <!-- stipulate functionality and improvements that can be implemented in the future. -->
 
-* I'd like to implement the high scores from each category.
-* Visual communication when the incorrect or correct answer is chosen
-* A light and dark mode toggle in the settings menu
+* I'd like to get the select to have a default value
+* I would love to make use of the potions that have been crafted, and maybe use them to craft other potions.
 
 <!-- MOCKUPS -->
 ## Final Outcome
 
-### Mockups
+### Final Mockup
 
-![image8](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_one.jpg)
+![image7](https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/Mockup4.png)
 <br>
-
-![image9](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_four.jpg)
-<br>
-
-![image10](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_three.jpg)
-<br>
-
-![image11](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/mockup_two.jpg)
 
 <!-- VIDEO DEMONSTRATION -->
 ### Video Demonstration
@@ -223,7 +211,7 @@ To see a run through of the application, click below:
 [View Demonstration](https://drive.google.com/file/d/13yYQyI_oNGEweU1Nftim3kCc0yPdMXoP/view?usp=sharing)
 
 
-See the [open issues](https://github.com/bee2805/BattleofTheGenerations/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/bee2805/TheWiccaHouse/issues) for a list of proposed features (and known issues).
 
 <!-- AUTHORS -->
 ## Authors
@@ -239,18 +227,17 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 ## Contact
 
 * **Bronwyn Potgieter** - [bronwyn.potgieter@yahoo.co.za](mailto:bronwyn.potgieter@yahoo.co.zas) - [@bronns_designs](https://www.instagram.com/bronns_designs/) 
-* **Project Link** - https://github.com/bee2805/BattleofTheGenerations
+* **Project Link** - https://github.com/bee2805/TheWiccaHouse
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 <!-- all resources that you used and Acknowledgements here -->
-* [OK Boomer Website](https://okboomer.game/)
-* [OK Boomer Instagram](https://www.instagram.com/okboomer.game/)
-* [OK Boomer Behance Project](https://www.behance.net/gallery/145988733/Ok-Boomer-Branding-and-Design-for-Trivia-Game)
-* [Boomer Questions and imagery Source 1](https://www.buzzfeed.com/briangalindo/quiz-that-is-easy-for-baby-boomers-only)
-* [Boomer Questions and imagery Source 2](https://www.buzzfeed.com/sarahaspler/boomer-trivia-quiz)
-* [Gen X Questions](https://www.buzzfeed.com/briangalindo/only-gen-xers-are-passing-this-quiz)
-* [Millennial Questions](https://www.buzzfeed.com/briangalindo/easy-2000s-trivia-quiz-for-millennials)
-* [Gen Z Questions](https://www.buzzfeed.com/farrahpenn/these-trivia-questions-will-separate-gen-z-cuspers-from)
-* [Mockups](https://www.behance.net/gallery/112977919/Google-Pixel-5-Mockup-Free-Download)
-* All the links to specific imagery is displayed in the code
+* [Artstation Material Studies](https://www.artstation.com/search?sort_by=relevance&query=material%20study)
+* [Artstation Potion Bottles](https://www.artstation.com/search?sort_by=relevance&query=potion%20bottles)
+* [Heading Font](https://fonts.google.com/specimen/Press+Start+2P?query=Press+Start+2P)
+* [Subheading + Paragraph Font](https://fonts.google.com/specimen/Courier+Prime?query=Courier+Prime)
+* [Background Image](https://www.vecteezy.com/vector-art/16265381-stilt-house-in-swamp-in-forest-at-night)
+* [Icons](https://fontawesome.com/)
+* [Main Mockup](https://www.mockupworld.co/free/workspace-mit-imac-scene-creator-mockup-set/)
+* [Clay Mockup](https://www.mockupworld.co/free/web-design-showcase-with-imac-macbook-and-iphone-mockup/)
+* [Wireframe Mockup](https://www.mockupworld.co/free/website-or-presentation-template-mockup/)
