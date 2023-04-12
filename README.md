@@ -19,7 +19,7 @@
 <p align="center">
 
   <a href="https://github.com/bee2805/TheWiccaHouse">
-    <img src="app/src/main/res/drawable/logo.png" alt="Logo" width="140" height="140">
+    <img src="https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/logo.png" alt="Logo" width="140" height="140">
   </a>
     
    <br />
@@ -200,7 +200,7 @@ Here, the user (if verified) will be able to select a potion that they wish to c
 
 ### Final Mockup
 
-![image7](https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/Mockup4.png)
+![image7](https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/Mockup5.png)
 <br>
 
 <!-- VIDEO DEMONSTRATION -->
