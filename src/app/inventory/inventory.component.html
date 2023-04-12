@@ -87,8 +87,7 @@
                     <div class="potion-info">
                         <div class="potionheading">
                             <h2 class="recipe-heading">{{recipe.name}}</h2>
-                            <p class="green amount" *ngIf="recipe.amount! >= 4">{{recipe.amount}} available</p>
-                            <p class="orange amount" *ngIf="recipe.amount == 1 || recipe.amount == 2 || recipe.amount == 3">{{recipe.amount}} available</p>
+                            <p class="green amount" *ngIf="recipe.amount! > 0">{{recipe.amount}} available</p>
                             <p class="red amount" *ngIf="recipe.amount == 0">No inventory</p>
                         </div>
 
