@@ -19,7 +19,7 @@
 <p align="center">
 
   <a href="https://github.com/bee2805/TheWiccaHouse">
-    <img src="https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/logo.png" alt="Logo" width="200" height="140">
+    <img src="https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/logo.png" alt="Logo" width="200" height="200">
   </a>
     
    <br />
