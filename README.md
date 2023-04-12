@@ -134,19 +134,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 The landing page has appropriate information about The Wicca house, and lets the user know what to expect when using it.
 
-![image2](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/splash_screen.jpg)
+![image2](https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/Mockup2.png)
 
 ### Inventory
 
 The inventory page showcases a list of all the ingredients in the inventory. These ingredients can be filtered based on their category (light magic, dark magic or the potions that have been, and can be crafted). The user can also update the amount of inventory if they need more to craft their desired potion, but they have to be verified before doing so.
 
-![image3](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/categories.jpg)
+![image3](https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/Mockup3.png)
 
 ### Crafting Section
 
 Here, the user (if verified) will be able to select a potion that they wish to craft. The potion can only be crafted if there are enough ingredients in the inventory. Once a potion is crafted, it can be found on the unventory page under 'potions', and the quantity of the used ingridients will be updated accordingly.
 
-![image4](https://github.com/bee2805/BattleofTheGenerations/blob/main/app/src/main/res/drawable/question_screen.jpg)
+![image4](https://github.com/bee2805/TheWiccaHouse/blob/main/README_files/Mockup4.png)
 
 <!-- CONCEPT PROCESS -->
 ## Concept Process
