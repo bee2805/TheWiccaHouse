@@ -82,19 +82,21 @@ The Wicca House is the place to go to fulfill all your wicca needs! This MEAN st
 The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-Ensure that you have GitHub desktop and Android Studio downloaded onto your machine.
+Ensure that you have GitHub desktop and Visueal Studio code downloaded onto your machine.
+
+Make sure to clone the server as well: [Server Repo](https://github.com/bee2805/TheWiccaHouse_server)
 
 ### How to install
 
 Here are a couple of ways to clone this repo:
 
 1. GitHub Desktop </br>
-Enter `https://github.com/bee2805/BattleofTheGenerations.git` into the URL field and press the `Clone` button.
+Enter `https://github.com/bee2805/TheWiccaHouse.git` into the URL field and press the `Clone` button.
 
 2. Clone Repository </br>
 Run the following in the command-line to clone the project:
    ```sh
-   git clone https://github.com/bee2805/BattleofTheGenerations.git
+   git clone https://github.com/bee2805/TheWiccaHouse.git
    ```
     Open `Software` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
